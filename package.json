@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "nodemon": "^2.0.19"
+    "install": "^0.13.0",
+    "npm": "^8.18.0",
+    "react-favicon": "^1.0.1"
   }
 }
