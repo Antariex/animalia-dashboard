@@ -29,6 +29,7 @@
 
 *{
     margin: 0;
+    margin-top: 2px !important;
     padding: 0;
     outline: 0;
     appearance: 0;
@@ -204,7 +205,7 @@ aside .sidebar a.active:before{
 
 aside .sidebar a.active span{
     color: var(--color-primary) !important;
-    margin-left: calc(1rem - 6px) !important;
+    margin-left: calc(1rem - 3px) !important;
 }
 
 aside .sidebar a:hover{
@@ -213,14 +214,6 @@ aside .sidebar a:hover{
 
 aside .sidebar a:hover span{
     margin-left: 1rem !important;
-}
-
-aside .sidebar .contadorDeMensajes{
-    background: var(--color-danger) !important;
-    color: var(--color-white) !important;
-    padding: 2px 10px !important;
-    font-size: 11px !important;
-    border-radius: var(--border-radius-1) !important;
 }
 
 .card{
@@ -244,4 +237,18 @@ aside .sidebar .contadorDeMensajes{
 
 .img-fluid px-3 px-sm-4 mt-3 mb-4{
     width:100px !important;
+}
+
+.bg{
+    background-color: var(--color-primary);
+}
+
+.text-white{
+    text-align: center;
+}
+
+.img-fluid{
+    max-width: 375px;
+    max-height: 375px;
+    margin: 0 auto;
 }

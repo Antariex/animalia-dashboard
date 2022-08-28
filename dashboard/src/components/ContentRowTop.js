@@ -8,17 +8,17 @@ function ContentRowTop(){
 				{/*<!-- Content Row Top -->*/}
 				<div className="container-fluid">
 					<div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-						<h1 className="h3 mb-0 text-gray-800">Dashboard de Administración</h1>
+						<h1 className="h3 mb-0 text-gray-800">Administración</h1>
 					</div>
 				
-					{/*<!-- Content Row Movies-->*/}
+					{/*<!-- Content Row-->*/}
 					<ContentRow />
-					{/*<!-- End movies in Data Base -->*/}
+					{/*<!-- End Content Row-->*/}
 					
 	
-					{/*<!-- Content Row Last Movie in Data Base -->*/}
+					{/*<!-- Content Row Last product in Data Base -->*/}
 					<div className="row">
-						{/*<!-- Last Movie in DB -->*/}
+						{/*<!-- Last product in DB -->*/}
 						<div className="col-lg-6 mb-4">
 							<div className="card shadow mb-4">
 								<div className="card-header py-3">
@@ -26,13 +26,13 @@ function ContentRowTop(){
 								</div>
 								<div className="card-body">
 									<div className="text-center">
-										<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={imagenFondo} alt=" "/>
+										<img className="img-fluid px-3 px-sm-5 mt-3 mb-5" src={imagenFondo} alt=" "/>
 									</div>
 									
 								</div>
 							</div>
 						</div>
-						{/*<!-- End content row last movie in Data Base -->*/}
+						{/*<!-- End content row last product in Data Base -->*/}
 
 						{/*<!-- Categories in DB -->*/}
 						<CategoriesInDb />
