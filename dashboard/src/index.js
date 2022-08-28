@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import './assets/css/app.css';
 import './assets/css/SideBarStyles.css';
 import reportWebVitals from './reportWebVitals';
-import Favicon from 'react-favicon'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -33,8 +33,8 @@
     outline: 0;
     appearance: 0;
     border: 0;
-    text-decoration: none;
-    list-style: none;
+    text-decoration: none !important;
+    list-style: none !important;
     box-sizing: border-box;
 }
 
@@ -54,15 +54,14 @@ body{
 }
 
 .container{
-display: grid;
-width: 96%;
+display: inline;
+width: 14rem;
 margin: 0 auto;
 gap: 1.8rem;
-grid-template-columns: 14rem auto 23rem;
 }
 
 a{
-    color: var(--color-dark)
+    color: var(--color-dark) !important
 }
 
 img{
@@ -132,6 +131,7 @@ b{
 
  aside{
     height: 100vh;
+    width: 14rem;
  }
 
  aside-top{
@@ -147,8 +147,8 @@ aside .logo{
 }
 
  aside .logo img{
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     margin: 0 auto;
  }
 
@@ -158,68 +158,90 @@ aside .close{
 
 /*SIDEBAR*/
 aside .sidebar{
-    display: flex;
-    flex-direction: column;
-    height: 86vh;
-    position: relative;
-    top: 3rem
+    display: flex !important;
+    flex-direction: column !important;
+    height: 86vh !important;
+    position: relative !important;
+    top: 2rem !important;
 }
 
 aside h3{
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 aside .sidebar a{
-    display: flex;
-    color: var(--color-info-dark);
-    margin-left: 2rem;
-    gap: 1rem;
-    align-items: center;
-    position: relative;
-    height: 3.7rem;
-    transition: all 300ms ease;
+    display: flex !important;
+    color: var(--color-info-dark) !important;
+    margin-left: 2rem !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    position: relative !important;
+    height: 3.7rem !important;
+    transition: all 300ms ease !important;
 }
 
 aside .sidebar a span{
-    font-size: 1.6rem;
-    transition: all 300ms ease;
+    font-size: 1.6rem !important;
+    transition: all 300ms ease !important;
 }
 
 aside .sidebar a:last-child{
-    position: absolute;
-    bottom: 2rem;
+    bottom: 0rem !important;
 }
 
 aside .sidebar a.active{
-    background: var(--color-light);
-    color: var(--color-primary);
-    margin-left: 0;
+    background: var(--color-light) !important;
+    color: var(--color-primary) !important;
+    margin-left: 0 !important;
 }
 
 aside .sidebar a.active:before{
-    content: "";
-    width: 6px;
-    height: 100%;
-    background: var(--color-primary);
+    content: "" !important;
+    width: 6px !important;
+    height: 100% !important;
+    background: var(--color-primary) !important;
 }
 
 aside .sidebar a.active span{
-    color: var(--color-primary);
-    margin-left: calc(1rem - 6px);
+    color: var(--color-primary) !important;
+    margin-left: calc(1rem - 6px) !important;
 }
 
 aside .sidebar a:hover{
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
 }
 
 aside .sidebar a:hover span{
-    margin-left: 1rem;
+    margin-left: 1rem !important;
 }
 
 aside .sidebar .contadorDeMensajes{
-    background: var(--color-danger);
+    background: var(--color-danger) !important;
+    color: var(--color-white) !important;
+    padding: 2px 10px !important;
+    font-size: 11px !important;
+    border-radius: var(--border-radius-1) !important;
+}
+
+.card{
+    
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease !important;
+    display: block;
+}
+
+.card:hover{
+    box-shadow: none;
+}
+
+.card > div span {
+    background: var(--color-primary);
+    padding: 0.5rem important;
+    border-radius: 50% !important;
+    font-size: 2rem;
     color: var(--color-white);
-    padding: 2px 10px;
-    font-size: 11px;
-    border-radius: var(--border-radius-1);
+}
+
+.img-fluid px-3 px-sm-4 mt-3 mb-4{
+    width:100px !important;
 }

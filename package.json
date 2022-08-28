@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "install": "^0.13.0",
-    "npm": "^8.18.0",
-    "react-favicon": "^1.0.1"
-  }
-}
