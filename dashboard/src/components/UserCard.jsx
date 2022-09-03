@@ -9,7 +9,7 @@ const UserCard = ({ id, profileImg, name, lastname, email }) => {
             </div>
             <div className="user-card__info">
                 <div className="user-card__info-img">
-                    <img src={`https://zen-hogar.herokuapp.com/users/avatar/${profileImg}`} alt={name} />
+                    
                 </div>
                 <div>
                     <span>{name} {lastname}</span>

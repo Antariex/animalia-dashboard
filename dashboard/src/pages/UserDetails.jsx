@@ -6,7 +6,7 @@ import { useCustomFetch } from '../hooks/useCustomFetch'
 
 const UserDetails = () => {
     let { id } = useParams();
-    let { data, isLoading, hasErrors } = useCustomFetch(`https://zen-hogar.herokuapp.com/api/users/${id}`)
+    let { data, isLoading, hasErrors } = useCustomFetch(`http:localhost:3000/api/users/${id}`)
     console.log(id)
     return (
         <>

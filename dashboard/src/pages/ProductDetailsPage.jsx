@@ -7,7 +7,7 @@ import { useCustomFetch } from '../hooks/useCustomFetch'
 const ProductDetailsPage = () => {
   const params = useParams();
   const { id } = params;
-  const { data, isLoading, hasErrors } = useCustomFetch(`https://pokemon-go1.p.rapidapi.com/pokemon_evolutions.json${id}`);
+  const { data, isLoading, hasErrors } = useCustomFetch(`http://localhost:3000/api/products/${id}`);
   return (
     <div className='container'>
       <h2>Product Detail</h2>

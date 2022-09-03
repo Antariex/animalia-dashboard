@@ -6,7 +6,7 @@ const ProductCard = ({ id, price, name, productImg, discount, discountValue, Cat
     return (
         <div className='product-card'>
             <div className='product-card__header'>
-                <img className='product-card__img' src={`https://zen-hogar.herokuapp.com/products/image/${productImg}`} alt={name} />
+                
                 {
                     discount ?
                         (

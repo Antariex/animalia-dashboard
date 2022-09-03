@@ -6,7 +6,7 @@ const ProductDetail = ({value}) => {
   return (
     <div className='product-detail__container'>
         <div className="product-detail__photo">
-            <img src={`https://zen-hogar.herokuapp.com/products/image/${productImg}`} alt={name} />
+            
         </div>
         <div className="product-detail__info">
             <div className="product-detail__title">

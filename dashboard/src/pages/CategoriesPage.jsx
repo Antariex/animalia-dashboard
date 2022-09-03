@@ -4,7 +4,7 @@ import Loading from '../components/Loading';
 import { useCustomFetch } from '../hooks/useCustomFetch'
 
 const CategoriesPage = () => {
-    const { data, isLoading, hasErrors } = useCustomFetch('https://zen-hogar.herokuapp.com/api/categories/');
+    const { data, isLoading, hasErrors } = useCustomFetch('http:localhost:300/api/categories/');
     return (
         <div className='container'>
             <h2>Categorías</h2>

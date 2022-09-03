@@ -4,7 +4,7 @@ import Loading from './Loading';
 import UserCard from '../components/UserCard'
 
 const ShowUsers = () => {
-    const { data, isLoading, hasHerrors } = useCustomFetch('https://zen-hogar.herokuapp.com/api/users');
+    const { data, isLoading, hasHerrors } = useCustomFetch('http://localhost:3000/api/users.js');
     const response = !!data && data
     return (
         <div className="users">

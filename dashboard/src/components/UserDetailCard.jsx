@@ -6,7 +6,7 @@ const UserDetailCard = ({value}) => {
   return (
     <div className='user-detail__container'>
         <div className="user-detail__header">
-            <img src={`https://zen-hogar.herokuapp.com/users/avatar/${profileImg}`} alt={name + lastname} />
+            
         </div>
         <div className='user-detail__name'>
             <h3>{name + ' '+ lastname}</h3>
