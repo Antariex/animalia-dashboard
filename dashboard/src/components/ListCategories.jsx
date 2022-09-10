@@ -8,15 +8,15 @@ const ListCategories = ({value}) => {
     <div>
         <ul className='category__main-list'>
             {
-                categories.map(category => {
+                categories.map(categories => {
                     return (
                         <li className='category__main-title'>
                             <NavLink to={'/'}>
-                                <span>{category.name}</span>
+                                <span>{categories.name}</span>
                             </NavLink>
                             <ul className='category__sub-list'>
                                 {
-                                    category.subCategories.map(sbCategory => {
+                                    categories.subCategories.map(sbCategory => {
                                         return (
                                             <li className='category__sub-title'>
                                                 <NavLink to={'/'}>

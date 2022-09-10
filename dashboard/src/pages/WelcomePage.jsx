@@ -4,7 +4,7 @@ import ResumeCard from '../components/ResumeCard'
 import { useCustomFetch } from '../hooks/useCustomFetch'
 
 const WelcomePage = () => {
-  let {data,isLoading,hasErrors} = useCustomFetch('http:localhost:3000/api/info')
+  let {data,isLoading,hasErrors} = useCustomFetch('/api/products')
   //SE QUITAN DATOS DE RELLENO. FALTA CORREGIR CONSUMO DE API PROPIA (AUN NO FUNCIONA)
   return (
     <div className='container'>

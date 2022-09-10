@@ -18,7 +18,7 @@ export const useCustomFetch = (url) => {
             .then(res => res.json())
             .then(data =>
                 setState({
-                    data,
+                    data:data.data,
                     isLoading: false,
                     hasErrors: false,
                 })
