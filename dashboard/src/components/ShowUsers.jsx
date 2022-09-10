@@ -4,7 +4,7 @@ import Loading from './Loading';
 import UserCard from '../components/UserCard'
 
 const ShowUsers = () => {
-    const { data, isLoading, hasHerrors } = useCustomFetch('http://localhost:3000/api/users');
+    const { data, isLoading, hasHerrors } = useCustomFetch('/api/users');
     const response = !!data && data
     return (
         <div className="users">

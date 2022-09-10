@@ -4,7 +4,7 @@ import Loading from './Loading';
 import ProductCard from './ProductCard'
 
 const ShowProducts = () => {
-  const { data, isLoading, hasHerrors } = useCustomFetch('http://localhost:3000/api/products');
+  const { data, isLoading, hasHerrors } = useCustomFetch('api/products');
   const response = !!data && data
 
   return (
