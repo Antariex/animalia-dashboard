@@ -28,7 +28,7 @@ export default ShowUsers
 
 */
 
-//de sneakers
+//A continuación basado en sneakers
 
 import { useState, useEffect } from "react";
 
@@ -80,7 +80,7 @@ function Users() {
          <td>{users.password}</td>
         </tr>
         </tbody>
-)
+      )
       })
      
 }
