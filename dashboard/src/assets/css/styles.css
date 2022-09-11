@@ -170,6 +170,11 @@ aside .sidebar a{
     caption-side: bottom;
  }
 
+ tr:hover {
+    background: var(--color-success);
+    color: var(--color-white);
+}
+
  th {
     background: var(--color-primary);
     color: var(--color-white);
