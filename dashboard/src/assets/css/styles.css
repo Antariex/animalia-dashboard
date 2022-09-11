@@ -163,7 +163,7 @@ aside .sidebar a{
  th, td {
     padding: 8px;
     width: auto;
-    border-bottom: 2px dashed var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
     text-align: start;
     vertical-align: top;
     border-collapse: collapse;

@@ -72,6 +72,7 @@ function TotalProducts() {
       })
   }
   </Table>
+  <br/>
       </div>
   );
 }
