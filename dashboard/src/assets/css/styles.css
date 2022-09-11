@@ -155,14 +155,27 @@ aside .sidebar a{
 }
 
 /* Show products */
-.products {
-    /* background-color: yellow; */
+.table {
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1em;
-    padding: 1em;
-}
+    border: 1px solid var(--color-primary);
+    border-spacing: 0;
+ }
+ th, td {
+    padding: 8px;
+    width: auto;
+    border-bottom: 2px dashed var(--color-primary);
+    text-align: start;
+    vertical-align: top;
+    border-collapse: collapse;
+    caption-side: bottom;
+ }
+
+ th {
+    background: var(--color-primary);
+    color: var(--color-white);
+    margin: 1px;
+    padding: 10px;
+ }
 
 /* Product Card */
 .product-card {

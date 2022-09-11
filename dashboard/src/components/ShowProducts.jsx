@@ -1,3 +1,4 @@
+
 /*import { render } from '@testing-library/react';
 import { useCustomFetch } from '../hooks/useCustomFetch';
 import Loading from './Loading';
@@ -33,7 +34,7 @@ export default ShowProducts
 
 
 import { useEffect, useState } from "react";
-
+import Table from 'react-bootstrap/Table'
 
 function TotalProducts() {
 
@@ -50,7 +51,7 @@ function TotalProducts() {
     useEffect(() => {}, [totalProducts]);
     
     useEffect(() => {
-      return () => console.log("%cse desmonto el componente", "color: red");
+      return () => console.log("%se desmonto el componente", "color: red");
     });
 
   return (
@@ -63,10 +64,10 @@ function TotalProducts() {
       <div className="products-top">
         <p className="products-title">Total de productos</p>
       </div>
-     
+      <Table className="table">
       <thead>
         <tr>
-          <th>Id</th>
+          <th>ID</th>
           <th>categoría</th>
           <th>SubCategoría</th>
           <th>Nombre</th>
@@ -105,6 +106,7 @@ function TotalProducts() {
         )
       })
   }
+  </Table>
       </div>
   );
 }
