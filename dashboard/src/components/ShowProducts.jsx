@@ -40,6 +40,7 @@ function TotalProducts() {
           <th>Descuento</th>
           <th>Imagen</th>
           <th>Descripción</th>
+          <th>Stock</th>
         </tr>
       </thead>
 
@@ -50,8 +51,8 @@ function TotalProducts() {
         <tr>
        
          <td>{products.id}</td>
-         <td>{products.category_id}</td>
-         <td>{products.subcategory_id}</td>
+         <td>{products.category.category}</td>
+         <td>{products.subcategory}</td>
          <td>{products.name}</td>
          <td>${products.price}</td>
          <td>${products.discount}</td>
@@ -66,6 +67,7 @@ function TotalProducts() {
             />
         </td>
          <td>{products.description}</td>
+         <td>{products.stock}</td>
         </tr>
         </tbody>
         )
