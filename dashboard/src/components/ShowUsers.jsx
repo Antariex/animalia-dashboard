@@ -31,12 +31,14 @@ function Users() {
      
       <thead>
         <tr>
+          <th>Id</th>
+          <th>Permiso</th>
           <th>Nombre</th>
           <th>Usuario</th>
           <th>Email</th>
           <th>Dirección</th>
           <th>Password</th>
-          <th>Foto</th>
+          <th>Thumbnail</th>
         </tr>
       </thead>
 
@@ -47,6 +49,8 @@ function Users() {
        <tbody>
         <tr>
        
+         <td>{users.id}</td>
+         <td>{users.permission_id}</td>
          <td>{users.name}</td>
          <td>{users.user}</td>
          <td>{users.email}</td>
