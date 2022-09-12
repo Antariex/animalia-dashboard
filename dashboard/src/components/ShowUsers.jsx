@@ -36,7 +36,7 @@ function Users() {
           <th>Email</th>
           <th>Dirección</th>
           <th>Password</th>
-          <th>Thumbnail</th>
+          <th>Foto</th>
         </tr>
       </thead>
 
