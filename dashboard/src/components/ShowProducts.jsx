@@ -53,8 +53,8 @@ function TotalProducts() {
          <td>{products.category_id}</td>
          <td>{products.subcategory_id}</td>
          <td>{products.name}</td>
-         <td>{products.price}</td>
-         <td>{products.discount}</td>
+         <td>${products.price}</td>
+         <td>${products.discount}</td>
          <td>
             <img
                 src={ products.thumbnail }

@@ -1,35 +1,3 @@
-/*
-import React from 'react'
-import { useCustomFetch } from '../hooks/useCustomFetch';
-import Loading from './Loading';
-import UserCard from '../components/UserCard'
-const ShowUsers = () => {
-    const { data, isLoading, hasHerrors } = useCustomFetch('/api/users');
-    const response = !!data && data
-    return (
-        <div className="users">
-            {
-                isLoading ?
-                    (
-                        <Loading />
-                    )
-                    :
-                    (
-                        response.users.map(user => {
-                            return <UserCard key={user.id} {...user} />
-                        })
-                    )
-            }
-        </div>
-    )
-}
-
-export default ShowUsers
-
-*/
-
-//A continuación basado en sneakers
-
 import { useState, useEffect } from "react";
 
 
@@ -37,13 +5,18 @@ function Users() {
   const [totalUsers, settotalUsers] = useState([]);
   useEffect(() => {
     fetch("/api/users")
-      .then((result) => result.json())
-      .then((data) => {
-        settotalUsers(data.data);
-        console.log(data.data);
-      });
+    .then((result) => result.json())
+    .then((data) => {
+      settotalUsers(data.data);
+      console.log(data.data);
+    });
   }, []);
 
+//creé un archivo cantusuarios en components. La idea es poner ahí el acontador del array y dps exportarlo para luego requerirlo
+
+  const cantUsuarios = totalUsers.length;
+  console.log(cantUsuarios);
+  
   useEffect(() => {}, [totalUsers]);
 
   useEffect(() => {
@@ -63,6 +36,7 @@ function Users() {
           <th>Email</th>
           <th>Dirección</th>
           <th>Password</th>
+          <th>Thumbnail</th>
         </tr>
       </thead>
 
@@ -78,6 +52,16 @@ function Users() {
          <td>{users.email}</td>
          <td>{users.address}</td>
          <td>{users.password}</td>
+         <td>
+            <img
+                src={ users.thumbnail }
+                className="img-thumbnail"
+                style={{
+                width: 50
+                }}
+                alt={users.thumbnail}
+            />
+        </td>
         </tr>
         </tbody>
       )
@@ -87,5 +71,8 @@ function Users() {
   
     </div>
   );
+
+
+
 }
 export default Users;
