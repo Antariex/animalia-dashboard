@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table'
 
 function TotalProducts() {
 
-    const [totalProducts, setTotalProducts] = useState([]);
+    const [TotalProducts, setTotalProducts] = useState([]);
     useEffect(() => {
       fetch("/api/products")
         .then((result) => result.json())
@@ -13,7 +13,7 @@ function TotalProducts() {
         });
     }, []);
     
-    useEffect(() => {}, [totalProducts]);
+    useEffect(() => {}, [TotalProducts]);
     
     useEffect(() => {
       return () => console.log("%se desmonto el componente", "color: red");
@@ -43,7 +43,7 @@ function TotalProducts() {
         </tr>
       </thead>
 
-      {totalProducts.map (products  => {
+      {TotalProducts.map (products  => {
      
         return(
        <tbody>
