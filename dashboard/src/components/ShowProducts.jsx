@@ -1,55 +1,22 @@
-/*import { render } from '@testing-library/react';
-import { useCustomFetch } from '../hooks/useCustomFetch';
-import Loading from './Loading';
-import ProductCard from './ProductCard'
+import { useEffect, useState } from "react";
+import Table from 'react-bootstrap/Table'
 
-const ShowProducts = () => {
-  const { data, isLoading, hasHerrors } = useCustomFetch('api/products');
-  const response = !!data && data
+function TotalProducts() {
 
-  return (
-    <div className="products">
-      {
-        isLoading ?
-          (
-            <Loading />
-          )
-          :
-          render() (
-            response.products.map(product => {
-              return <ProductCard key={product.id} {...product} />
-            })
-            )
-          }
-    </div>
-    )
-  }
-  
-  export default ShowProducts
-  */
- 
- //A continuación basado en sneakers
- 
- 
- 
- import { useEffect, useState } from "react";
- 
- 
- function TotalProducts() {
-   
-   const [totalProducts, setTotalProducts] = useState([]);
-   useEffect(() => {
-     fetch("/api/products")
-     .then((result) => result.json())
-     .then((data) => {
-       setTotalProducts(data.data);
-       //console.log(data.data);
-      });
+    const [TotalProducts, setTotalProducts] = useState([]);
+    useEffect(() => {
+      fetch("/api/products")
+        .then((result) => result.json())
+        .then((data) => {
+          setTotalProducts(data.data);
+          //console.log(data.data);
+        });
     }, []);
     
-    useEffect(() => {}, [totalProducts]);
+    useEffect(() => {}, [TotalProducts]);
+    
     useEffect(() => {
-      return () => console.log("%cse desmonto el componente", "color: red");
+      return () => console.log("%se desmonto el componente", "color: red");
     });
     
     return (
@@ -62,10 +29,10 @@ const ShowProducts = () => {
       <div className="products-top">
         <p className="products-title">Total de productos</p>
       </div>
-     
+      <Table className="table">
       <thead>
         <tr>
-          <th>Id</th>
+          <th>ID</th>
           <th>categoría</th>
           <th>SubCategoría</th>
           <th>Nombre</th>
@@ -73,10 +40,11 @@ const ShowProducts = () => {
           <th>Descuento</th>
           <th>Imagen</th>
           <th>Descripción</th>
+          <th>Stock</th>
         </tr>
       </thead>
 
-      {totalProducts.map (products  => {
+      {TotalProducts.map (products  => {
      
   
         return(
@@ -84,11 +52,11 @@ const ShowProducts = () => {
         <tr>
        
          <td>{products.id}</td>
-         <td>{products.category_id}</td>
-         <td>{products.subcategory_id}</td>
+         <td>{products.category.category}</td>
+         <td>{products.subcategory}</td>
          <td>{products.name}</td>
-         <td>{products.price}</td>
-         <td>{products.discount}</td>
+         <td>${products.price}</td>
+         <td>${products.discount}</td>
          <td>
             <img
                 src={ products.thumbnail }
@@ -100,11 +68,14 @@ const ShowProducts = () => {
             />
         </td>
          <td>{products.description}</td>
+         <td>{products.stock}</td>
         </tr>
         </tbody>
         )
       })
   }
+  </Table>
+  <br/>
       </div>
   );
 }

@@ -2,9 +2,10 @@ import React from 'react'
 import TotalProducts from "./TotalProducts";
 import TotalUsers from './TotalUsers';
 import DetailRow from './DetailRow';
+import LastUser from "./LastUser";
 
 const ResumeCard = ({ value }) => {
-    let { totalProducts, totalUsers, totalProductsByCategory } = value
+    let { TotalProducts, TotalUsers, TotalCategories } = value
     // let {categories} = totalProductsByCategory;
 
     return (
@@ -24,20 +25,19 @@ const ResumeCard = ({ value }) => {
             <div className='resume-card'>
                 <div className='resume-card__wrapper'>
                     <h2 className='resume-card__title'>Total de categorías</h2>
-                    <p>6</p><span className="material-icons">insights</span>
+                    <p>{TotalCategories}</p><span className="material-icons">insights</span>
                 </div>
             </div>
-            <div className='resume-card width-card'>
-                <div className='resume-card__wrapper'>
-                    <h2 className='resume-card__title'>Total de productos por categoria</h2>
-                    <hr />
-                </div>
-            </div>
-            <div className='resume-card width-card'>
-                <div className='resume-card__wrapper'>
-                    <h2 className='resume-card__title'>Total de subcategorias por categoria</h2>
-                    <hr />
 
+            <div className='resume-card width-card'>
+                <div className='resume-card__wrapper'>
+                    <h2 className='resume-card__title'>Último usuario registrado</h2>
+                    <hr />
+                    <div className="col ">
+          <LastUser />
+          </div>
+                    <br/>
+                    <br/>
                 </div>
 
             </div>

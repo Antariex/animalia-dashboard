@@ -1,35 +1,3 @@
-/*
-import React from 'react'
-import { useCustomFetch } from '../hooks/useCustomFetch';
-import Loading from './Loading';
-import UserCard from '../components/UserCard'
-const ShowUsers = () => {
-    const { data, isLoading, hasHerrors } = useCustomFetch('/api/users');
-    const response = !!data && data
-    return (
-        <div className="users">
-            {
-                isLoading ?
-                    (
-                        <Loading />
-                    )
-                    :
-                    (
-                        response.users.map(user => {
-                            return <UserCard key={user.id} {...user} />
-                        })
-                    )
-            }
-        </div>
-    )
-}
-
-export default ShowUsers
-
-*/
-
-//A continuación basado en sneakers
-
 import { useState, useEffect } from "react";
 
 
@@ -46,8 +14,8 @@ function Users() {
 
 //creé un archivo cantusuarios en components. La idea es poner ahí el acontador del array y dps exportarlo para luego requerirlo
 
-  const cantUsuarios = totalUsers.length;
-  console.log(cantUsuarios);
+  //const cantUsuarios = totalUsers.length;
+  //console.log(cantUsuarios);
   
   useEffect(() => {}, [totalUsers]);
 
