@@ -19,47 +19,46 @@ const ShowProducts = () => {
             response.products.map(product => {
               return <ProductCard key={product.id} {...product} />
             })
-          )
-      }
+            )
+          }
     </div>
-  )
-}
-
-export default ShowProducts
-*/
-
-//A continuación basado en sneakers
-
-
-
-import { useEffect, useState } from "react";
-
-
-function TotalProducts() {
-
-    const [totalProducts, setTotalProducts] = useState([]);
-    useEffect(() => {
-      fetch("/api/products")
-        .then((result) => result.json())
-        .then((data) => {
-          setTotalProducts(data.data);
-          //console.log(data.data);
-        });
+    )
+  }
+  
+  export default ShowProducts
+  */
+ 
+ //A continuación basado en sneakers
+ 
+ 
+ 
+ import { useEffect, useState } from "react";
+ 
+ 
+ function TotalProducts() {
+   
+   const [totalProducts, setTotalProducts] = useState([]);
+   useEffect(() => {
+     fetch("/api/products")
+     .then((result) => result.json())
+     .then((data) => {
+       setTotalProducts(data.data);
+       //console.log(data.data);
+      });
     }, []);
     
     useEffect(() => {}, [totalProducts]);
-    
     useEffect(() => {
       return () => console.log("%cse desmonto el componente", "color: red");
     });
-
-  return (
-    /*<div className=" m-2 totalsBox">
+    
+    return (
+      /*<div className=" m-2 totalsBox">
       <p className="title">Total de productos</p>
       <p className="total">{totalProducts}</p>
-    </div>*/
-//esto tomo de users
-    <div className="products-box">
+      </div>*/
+      //esto tomo de users
+      <div className="products-box">
       <div className="products-top">
         <p className="products-title">Total de productos</p>
       </div>
@@ -79,6 +78,7 @@ function TotalProducts() {
 
       {totalProducts.map (products  => {
      
+  
         return(
        <tbody>
         <tr>

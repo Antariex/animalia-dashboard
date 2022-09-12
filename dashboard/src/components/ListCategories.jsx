@@ -2,25 +2,25 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 const ListCategories = ({value}) => {
-    let {categories} = value;
-    console.log(categories)
+    let {category} = value;
+    console.log(category)
   return (
     <div>
         <ul className='category__main-list'>
             {
-                categories.map(categories => {
+                category.map(category => {
                     return (
                         <li className='category__main-title'>
                             <NavLink to={'/'}>
-                                <span>{categories.name}</span>
+                                <span>{category.name}</span>
                             </NavLink>
                             <ul className='category__sub-list'>
                                 {
-                                    categories.subCategories.map(sbCategory => {
+                                    category.subCategory.map(subCategory => {
                                         return (
                                             <li className='category__sub-title'>
                                                 <NavLink to={'/'}>
-                                                    <span>{sbCategory.name}</span>
+                                                    <span>{subCategory.name}</span>
                                                 </NavLink>
                                             </li>
                                         )
