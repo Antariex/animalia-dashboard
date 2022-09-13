@@ -497,6 +497,10 @@ aside .sidebar a{
     color: #3b3764
 }
 
+.img-thumbmnail {
+width: 170px !important;
+}
+
 /* Categories */
 .category__main-list {
     margin: 0;

@@ -1,5 +1,6 @@
 /*import React from 'react'
 import { NavLink } from 'react-router-dom';
+
 const ListCategories = ({value}) => {
     let {category} = value;
    return (
@@ -33,6 +34,7 @@ const ListCategories = ({value}) => {
     </div>
   )
 }
+
 export default ListCategories
 */
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-const ProductCard = ({ id, price, name, productImg, discount, discountValue, Category, sbCategory, stock }) => {
+const ProductCard = ({ id, price, name, productImg, discount, discountValue, Category, subCategory, stock }) => {
     console.log()
     return (
         <div className='product-card'>
@@ -25,7 +25,7 @@ const ProductCard = ({ id, price, name, productImg, discount, discountValue, Cat
                     <hr />
                 </div>
                 <p className='product-card__body--price'>${price}</p>
-                <p>{`${Category.name} > ${sbCategory.name}`}</p>
+                <p>{`${Category.name} > ${subCategory.name}`}</p>
                 <p>{`Cantidad en stock: ${stock}`}</p>
             </div>
             <div className='product-card_footer'>
