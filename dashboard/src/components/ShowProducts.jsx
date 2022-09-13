@@ -20,11 +20,7 @@ function TotalProducts() {
     });
     
     return (
-      /*<div className=" m-2 totalsBox">
-      <p className="title">Total de productos</p>
-      <p className="total">{totalProducts}</p>
-      </div>*/
-      //esto tomo de users
+   
       <div className="products-box">
       <div className="products-top">
         <p className="products-title">Total de productos</p>

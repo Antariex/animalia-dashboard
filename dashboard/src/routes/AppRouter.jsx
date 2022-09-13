@@ -10,6 +10,7 @@ import UserDetails from '../pages/UserDetails'
 import TotalProducts from '../components/TotalProducts'
 import TotalUsers from '../components/TotalUsers'
 
+
 const AppRouter = () => {
   return (
     <>

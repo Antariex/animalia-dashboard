@@ -1,4 +1,6 @@
-import React from "react";
+// contador número total de usuarios
+
+/*import React from "react";
 import { useEffect, useState } from "react";
 
 
@@ -31,10 +33,9 @@ function TotalUsers() {
 }
 export default TotalUsers;
 
-
+*/
 //voy a probar con la lógica que traigo de lastUser a continuación. Lo que esa silenciado arriba es lo que había
-
-/*import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function LastUser() {
@@ -85,4 +86,4 @@ function LastUser() {
     </div>
 );
 }
-export default LastUser;*/
+export default LastUser;

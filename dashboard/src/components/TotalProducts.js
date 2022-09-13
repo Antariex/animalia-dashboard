@@ -1,3 +1,6 @@
+
+//contador numero total de productos
+
 import React from "react";
 import { useEffect, useState } from "react";
 
@@ -10,7 +13,7 @@ function TotalProducts() {
       fetch("/api/products")
         .then((result) => result.json())
         .then((data) => {
-          setTotalProducts(data.totalProducts);
+          setTotalProducts(data.products);
         });
     }, []);
     

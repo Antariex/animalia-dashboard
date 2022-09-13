@@ -12,11 +12,6 @@ function Users() {
     });
   }, []);
 
-//creé un archivo cantusuarios en components. La idea es poner ahí el acontador del array y dps exportarlo para luego requerirlo
-
-  //const cantUsuarios = totalUsers.length;
-  //console.log(cantUsuarios);
-  
   useEffect(() => {}, [totalUsers]);
 
   useEffect(() => {
@@ -64,6 +59,7 @@ function Users() {
                 width: 50
                 }}
                 alt={users.thumbnail}
+                
             />
         </td>
         </tr>
