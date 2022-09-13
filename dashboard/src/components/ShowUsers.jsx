@@ -33,7 +33,7 @@ function Users() {
           <th>Email</th>
           <th>Dirección</th>
           <th>Password</th>
-          <th>Thumbnail</th>
+          <th>Avatar</th>
         </tr>
       </thead>
 
@@ -58,7 +58,7 @@ function Users() {
                 style={{
                 width: 50
                 }}
-                alt={users.thumbnail}
+                alt={users.name}
                 
             />
         </td>
