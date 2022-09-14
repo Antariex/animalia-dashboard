@@ -58,13 +58,13 @@ function Users() {
          <td>{users.password}</td>
          <td>
             <img
-                src={ users.thumbnail }
+                src={`${users.imagen}`}
                 className="img-thumbnail"
                 style={{
                 width: 50
                 }}
 
-                alt={users.thumbnail}
+                alt={users.avatar}
 
             />
         </td>

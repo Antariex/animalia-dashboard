@@ -41,7 +41,8 @@ function LastUser() {
         <td>{lastUser.email}</td>
         <td>{lastUser.address}</td>
         <td><img
-                    src={`${lastUser.thumbnail}`}
+        
+                    src={`${lastUser.imagen}`}
               
                     style={{ width: "25%" }}
               /></td>
