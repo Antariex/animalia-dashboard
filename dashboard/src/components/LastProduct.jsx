@@ -40,7 +40,6 @@ function LastProduct() {
         </tr>
       </thead>
       <td>{lastProduct.id}</td>
-      {/* <td>{lastProduct.category.category}</td> */}
       <td>{lastProduct.category}</td>
          <td>{lastProduct.subcategory}</td>
          <td>{lastProduct.name}</td>
