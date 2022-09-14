@@ -1,19 +1,19 @@
 import { useEffect, useState } from 'react';
 
-export default function TotalProducts() {
-    const [countProducts, setCountProducts] = useState([]);
+export default function TotalCategories() {
+    const [countCategories, setCountCategories] = useState([]);
     useEffect(() => {
-        const url = "/api/products";
+        const url = "/api/categories";
         fetch(url)
             .then(res => res.json())
             .then(data => {
-                setCountProducts(data.meta.totalProducts)
+                setCountCategories(data.meta.total)
             })
     }, []);
 
     return (
         <><div>
-            {countProducts }
+            {countCategories }
         </div>
         </>
 

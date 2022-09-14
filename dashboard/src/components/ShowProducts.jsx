@@ -9,18 +9,17 @@ function TotalProducts() {
         .then((result) => result.json())
         .then((data) => {
           setTotalProducts(data.data);
-          //console.log(data.data);
         });
     }, []);
-    
+
     useEffect(() => {}, [TotalProducts]);
-    
+
     useEffect(() => {
-      return () => console.log("%se desmonto el componente", "color: red");
+      return () => console.log();
     });
-    
+
     return (
-   
+
       <div className="products-box">
       <div className="products-top">
         <p className="products-title">Total de productos</p>
@@ -41,12 +40,11 @@ function TotalProducts() {
       </thead>
 
       {TotalProducts.map (products  => {
-     
-  
+
         return(
        <tbody>
         <tr>
-       
+
          <td>{products.id}</td>
          <td>{products.category}</td>
          <td>{products.subcategory}</td>

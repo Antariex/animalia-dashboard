@@ -19,7 +19,7 @@ function UserDetail() {
   useEffect(() => {}, [user]);
 
   useEffect(() => {
-    return () => console.log("%cse desmonto el componente", "color: red");
+    return () => console.log();
   });
 
   return (
@@ -34,7 +34,7 @@ function UserDetail() {
           <Card.Text>{user.email}</Card.Text>
         </Card.Body>
       </Card>
-      </div> 
+      </div>
       </div>
     </div>
   );

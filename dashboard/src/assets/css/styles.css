@@ -129,19 +129,19 @@ aside .sidebar a{
 
 .resume-card {
     background-color: var(--color-white);
-    box-shadow: 0 2rem 3rem var(--color-light);
+    box-shadow: 0 0 1px 0 var(--color-dark);
     width: 300px;
     border-left: 3px solid var(--color-primary);
+    border-right: 3px solid var(--color-primary);
     padding: 6px 12px;
     transition: all 300ms ease !important;
     height: min-content;
 }
 
 .resume-card > div span {
-    background: var(--color-warning);
     border-radius: 50% !important;
     font-size: 30px;
-    color: var(--color-white);
+    color: var(--color-primary);
     position: relative;
     left: 230px;
     bottom: 30px;

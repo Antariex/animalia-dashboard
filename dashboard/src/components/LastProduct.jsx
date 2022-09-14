@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-
 function LastProduct() {
   const [lastProduct, setLastProduct] = useState([]);
   useEffect(() => {
-    console.log("%cse monto el componente", "color: green");
+    console.log();
     fetch("/api/products")
       .then((result) => result.json())
       .then((data) => {
@@ -14,11 +12,11 @@ function LastProduct() {
   }, []);
 
   useEffect(() => {
-    console.log("%cse actualizo el componente", "color: blue");
+    console.log();
   }, [lastProduct]);
 
   useEffect(() => {
-    return () => console.log("%cse desmonto el componente", "color: red");
+    return () => console.log();
   });
 
   return (
@@ -40,8 +38,7 @@ function LastProduct() {
         </tr>
       </thead>
       <td>{lastProduct.id}</td>
-      {/* <td>{lastProduct.category.category}</td> */}
-      <td>{lastProduct.category}</td>
+         <td>{lastProduct.category}</td>
          <td>{lastProduct.subcategory}</td>
          <td>{lastProduct.name}</td>
          <td>${lastProduct.price}</td>
