@@ -38,6 +38,11 @@ const SideNav = () => {
                     <h3>Categorías</h3>
                 </NavLink>
 
+                <NavLink to={'subcategories'}>
+                    <span className="material-icons">subcategory</span>
+                    <h3>Subcategorías</h3>
+                </NavLink>
+
             </div>
         </aside>
     </div>

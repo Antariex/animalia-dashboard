@@ -1,5 +1,6 @@
 /*import React from 'react'
 import { NavLink } from 'react-router-dom';
+
 const ListCategories = ({value}) => {
     let {category} = value;
    return (
@@ -33,6 +34,7 @@ const ListCategories = ({value}) => {
     </div>
   )
 }
+
 export default ListCategories
 */
 
@@ -40,19 +42,19 @@ export default ListCategories
 import { useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table'
 
-function TotalCategories() {
+function TotalSubcategories() {
 
-    const [TotalCategories, setTotalCategories] = useState([]);
+    const [TotalSubcategories, setTotalSubcategories] = useState([]);
     useEffect(() => {
-      fetch("/api/categories")
+      fetch("/api/subcategories")
         .then((result) => result.json())
         .then((data) => {
-          setTotalCategories(data.data);
+          setTotalSubcategories(data.data);
           //console.log(data.data);
         });
     }, []);
     
-    useEffect(() => {}, [TotalCategories]);
+    useEffect(() => {}, [TotalSubcategories]);
     
     useEffect(() => {
       return () => console.log("%se desmonto el componente", "color: red");
@@ -66,25 +68,25 @@ function TotalCategories() {
       //esto tomo de users
       <div className="products-box">
       <div className="products-top">
-        <p className="products-title">Total de categorías</p>
+        <p className="products-title">Total de subcategorías</p>
       </div>
       <Table className="table">
       <thead>
         <tr>
           <th>ID</th>
-          <th>categoría</th>
+          <th>subcategoría</th>
         </tr>
       </thead>
 
-      {TotalCategories.map (category  => {
+      {TotalSubcategories.map (subcategory  => {
      
   
         return(
        <tbody>
         <tr>
        
-         <td>{category.id}</td>
-         <td>{category.category}</td>
+         <td>{subcategory.id}</td>
+         <td>{subcategory.subcategory}</td>
          
         </tr>
         </tbody>
@@ -96,4 +98,4 @@ function TotalCategories() {
       </div>
   );
 }
-export default TotalCategories;
+export default TotalSubcategories;

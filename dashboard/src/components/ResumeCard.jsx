@@ -2,11 +2,12 @@ import React from 'react'
 import TotalProducts from "./TotalProducts";
 import TotalUsers from './TotalUsers';
 import LastUser from "./LastUser";
+import LastProduct from "./LastProduct";
 import ListCategories from './ShowCategories';
 import { useParams } from "react-router-dom";
 
 const ResumeCard = ({ value }) => {
-    let { TotalProducts, TotalUsers, TotalCategories, TotalSubCategories } = value
+    let { TotalProducts, TotalUsers, TotalCategories, TotalSubcategories } = value
     // let {categories} = totalProductsByCategory;
 
     return (
@@ -29,6 +30,12 @@ const ResumeCard = ({ value }) => {
                     <p>{TotalCategories}</p><span className="material-icons">insights</span>
                 </div>
             </div>
+            <div className='resume-card'>
+                <div className='resume-card__wrapper'>
+                    <h2 className='resume-card__title'>Total de subcategorías</h2>
+                    <p>{TotalSubcategories}</p><span className="material-icons">insights</span>
+                </div>
+            </div>
 
             
             <div className='resume-card__wrapper'>
@@ -38,10 +45,24 @@ const ResumeCard = ({ value }) => {
                     <div >
           <LastUser />
           
+          <div className='resume-card__wrapper'>
+            <br/>
+                    <h2 className='resume-card__title'>Último producto registrado:</h2>
+                    <hr/>
+                    <div >
+          <LastProduct />
+          
+                </div>
+                </div>
+
+
                 </div>
                 </div>
            
-            </>
+
+
+           
+        </>
     )
 }
 
