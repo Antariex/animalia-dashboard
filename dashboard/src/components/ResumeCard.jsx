@@ -30,25 +30,17 @@ const ResumeCard = ({ value }) => {
                 </div>
             </div>
 
-            <div className='resume-card'>
-                <div className='resume-card__wrapper'>
-                    <h2 className='resume-card__title'>Total de subcategorías</h2>
-                    <p>{TotalSubCategories}</p><span className="material-icons">insights</span>
-                </div>
-            </div>
-
-            <div className='resume-card width-card'>
-                <div className='resume-card__wrapper'>
-                    <h2 className='resume-card__title'>Último usuario registrado</h2>
-                    <hr />
-                    <div className="col ">
+            
+            <div className='resume-card__wrapper'>
+            <br/>
+                    <h2 className='resume-card__title'>Último usuario registrado:</h2>
+                    <hr/>
+                    <div >
           <LastUser />
-          </div>
-                    <br/>
-                    <br/>
+          
                 </div>
-
-            </div>
+                </div>
+           
             </>
     )
 }

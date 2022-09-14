@@ -21,32 +21,33 @@ function LastUser() {
   });
 
   return (
+    <tbody>
+      <tr>    
     <div className="lastUser-box">
-        <div className="lastUser-top">
-        <p className="lastUser-id">Id</p>
-        <p className="lastUser-name">{lastUser.id}</p>
-        <p className="lastUser-title">Nombre</p>
-        <p className="lastUser-name">{lastUser.name}</p>
-        <p className="lastUser-title">Email</p>
-            <p className="lastUser-email">{lastUser.email}</p>
-        </div>
-        <div className="lastUser-boxContent">
-        <p className="lastUser-image">Imagen</p>
-             <img
+        <div className="lastUser-top"></div>
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Usuario</th>
+          <th>Email</th>
+          <th>Dirección</th>
+          <th>Avatar</th>
+        </tr>
+      </thead>
+        <td>{lastUser.id}</td>
+        <td>{lastUser.name}</td>
+        <td>{lastUser.user}</td>
+        <td>{lastUser.email}</td>
+        <td>{lastUser.address}</td>
+        <td><img
                     src={`${lastUser.thumbnail}`}
               
                     style={{ width: "25%" }}
-              />
-            <div className="lastUser-bottom">
-              <Link
-                    to={`/userDetail/${lastUser.id}`}
-                    style={{ textDecoration: "none", color: "white" }}
-              >
-                    Visitá su perfil
-              </Link>
-            </div>
-        </div>
+              /></td>
     </div>
+    </tr>
+    </tbody>
 );
 }
 export default LastUser;
