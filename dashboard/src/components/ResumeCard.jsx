@@ -2,6 +2,7 @@ import React from 'react'
 import TotalProducts from "./TotalProducts";
 import TotalUsers from './TotalUsers';
 import LastUser from "./LastUser";
+import LastProduct from "./LastProduct";
 import ListCategories from './ShowCategories';
 import { useParams } from "react-router-dom";
 
@@ -44,10 +45,24 @@ const ResumeCard = ({ value }) => {
                     <div >
           <LastUser />
           
+          <div className='resume-card__wrapper'>
+            <br/>
+                    <h2 className='resume-card__title'>Último producto registrado:</h2>
+                    <hr/>
+                    <div >
+          <LastProduct />
+          
+                </div>
+                </div>
+
+
                 </div>
                 </div>
            
-            </>
+
+
+           
+        </>
     )
 }
 

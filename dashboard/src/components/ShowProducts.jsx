@@ -48,7 +48,7 @@ function TotalProducts() {
         <tr>
        
          <td>{products.id}</td>
-         <td>{products.category.category}</td>
+         <td>{products.category}</td>
          <td>{products.subcategory}</td>
          <td>{products.name}</td>
          <td>${products.price}</td>
