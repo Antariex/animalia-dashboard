@@ -19,7 +19,7 @@ const SideNav = () => {
                 </NavLink>
                 <br/>
                 <NavLink to={'/'}>
-                    <span className="material-icons">grid_view</span>
+                    <span className="material-icons">dashboard</span>
                     <h3>Dashboard</h3>
                     </NavLink>
 
@@ -28,21 +28,20 @@ const SideNav = () => {
                     <h3>Productos</h3>
                     </NavLink>
 
-                <NavLink to={'users'}>
-                    <span className="material-icons">person</span>
-                    <h3>Usuarios</h3>
-                </NavLink>
-
                 <NavLink to={'categories'}>
                     <span className="material-icons">category</span>
                     <h3>Categorías</h3>
                 </NavLink>
 
                 <NavLink to={'subcategories'}>
-                    <span className="material-icons">subcategory</span>
+                    <span className="material-icons">apps</span>
                     <h3>Subcategorías</h3>
                 </NavLink>
 
+                <NavLink to={'users'}>
+                    <span className="material-icons">person</span>
+                    <h3>Usuarios</h3>
+                </NavLink>
             </div>
         </aside>
     </div>
