@@ -5,7 +5,6 @@ import { useCustomFetch } from '../hooks/useCustomFetch'
 
 const WelcomePage = () => {
   let {data,isLoading,hasErrors} = useCustomFetch('/api/products')
-
   return (
     <div className='container'>
       <h2>Administración</h2>

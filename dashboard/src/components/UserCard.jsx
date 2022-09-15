@@ -19,7 +19,7 @@ function UserDetail() {
   useEffect(() => {}, [user]);
 
   useEffect(() => {
-    return () => console.log("%cse desmonto el componente", "color: red");
+    return () => console.log();
   });
 
   return (
@@ -31,11 +31,10 @@ function UserDetail() {
         <Card.Body>
           <Card.Title className="rounded p-2" style={{ backgroundColor: "#AD1357", color: "white" }}>Perfil de usuario</Card.Title>
           <Card.Text>{user.name} {user.user}</Card.Text>
-          
           <Card.Text>{user.email}</Card.Text>
         </Card.Body>
       </Card>
-      </div> 
+      </div>
       </div>
     </div>
   );

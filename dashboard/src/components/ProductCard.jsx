@@ -6,7 +6,6 @@ const ProductCard = ({ id, price, name, productImg, discount, discountValue, Cat
     return (
         <div className='product-card'>
             <div className='product-card__header'>
-                
                 {
                     discount ?
                         (

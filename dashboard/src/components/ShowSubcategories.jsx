@@ -9,22 +9,16 @@ function TotalSubcategories() {
         .then((result) => result.json())
         .then((data) => {
           setTotalSubcategories(data.data);
-          //console.log(data.data);
         });
     }, []);
-    
+
     useEffect(() => {}, [TotalSubcategories]);
-    
+
     useEffect(() => {
-      return () => console.log("%se desmonto el componente", "color: red");
+      return () => console.log();
     });
-    
+
     return (
-      /*<div className=" m-2 totalsBox">
-      <p className="title">Total de productos</p>
-      <p className="total">{totalProducts}</p>
-      </div>*/
-      //esto tomo de users
       <div className="products-box">
       <div className="products-top">
         <p className="products-title">Total de subcategorías</p>
@@ -38,15 +32,14 @@ function TotalSubcategories() {
       </thead>
 
       {TotalSubcategories.map (subcategory  => {
-     
-  
+
         return(
        <tbody>
         <tr>
-       
+
          <td>{subcategory.id}</td>
          <td>{subcategory.subcategory}</td>
-         
+
         </tr>
         </tbody>
         )
