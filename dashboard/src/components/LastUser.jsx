@@ -46,7 +46,7 @@ function LastUser() {
         
                     src={`${lastUser.imagen}`}
               
-                    style={{ width: "25%" }}
+                    style={{ width: "25%", borderRadius: "50px"}}
               /></td>
     </div>
     </tr>

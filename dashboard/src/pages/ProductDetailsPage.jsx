@@ -10,8 +10,8 @@ const ProductDetailsPage = () => {
   const { data, isLoading, hasErrors } = useCustomFetch(`http://localhost:3000/api/products/${id}`);
   return (
     <div className='container'>
-      <h2>Product Detail</h2>
-      <hr />
+      <h2>Detalle de producto</h2>
+
       <div className='product-detail'>
         {
           isLoading ?
