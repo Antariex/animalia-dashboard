@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function LastUser() {
   const [lastUser, setLastUser] = useState([]);
@@ -42,9 +43,11 @@ function LastUser() {
         <td>{lastUser.email}</td>
         <td>{lastUser.address}</td>
         <td><img
-              src={`${lastUser.imagen}`}
-              style={{ width: "25%" }}
-          /></td>
+        
+                    src={`${lastUser.imagen}`}
+              
+                    style={{ width: "25%", borderRadius: "50px"}}
+              /></td>
     </div>
     </tr>
     </tbody>

@@ -10,15 +10,15 @@ const ProductDetail = ({value}) => {
         </div>
         <div className="product-detail__info">
             <div className="product-detail__title">
-                <h1>{name}</h1>
+                <h2 style={{ fontSize: "28px", color: "#C9914B" }}>{name}</h2>
                 <p>ID: {id}</p>
-                <hr />
+                
             </div>
             <div className="product-detail__price">
-                <p>${price}</p>
+                <p style={{ color: "#135191", fontSize: "30px", fontWeight: "700"}}>${price}</p>
             </div>
             <div className="product-detail__description">
-                <p>{description}</p>
+                <p style={{ color: "#3c3c3c", fontSize: "24px", padding: "50px", margin: "10px", textAlign: "justify"}}>{description}</p>
             </div>
         </div>
     </div>

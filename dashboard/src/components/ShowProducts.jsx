@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import Table from 'react-bootstrap/Table'
+import Table from 'react-bootstrap/Table';
+import { NavLink } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function TotalProducts() {
 
@@ -61,7 +63,12 @@ function TotalProducts() {
                 alt={products.name}
             />
         </td>
-         <td>{products.description}</td>
+         <td> <Link
+            to={`${products.id}`}
+            style={{ textDecoration: "none", color: "#7380ec" }}
+          >
+            [Ver detalle]
+          </Link></td>
          <td>{products.stock}</td>
         </tr>
         </tbody>
