@@ -28,6 +28,7 @@ function TotalSubcategories() {
         <tr>
           <th>ID</th>
           <th>subcategoría</th>
+          <th>cantidad (productos)</th>
         </tr>
       </thead>
 
@@ -39,6 +40,7 @@ function TotalSubcategories() {
 
          <td>{subcategory.id}</td>
          <td>{subcategory.subcategory}</td>
+         <td>{subcategory.id}</td>
 
         </tr>
         </tbody>
