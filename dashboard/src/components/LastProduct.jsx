@@ -49,8 +49,8 @@ function LastProduct() {
     
           style={{ width: "100%" }}
         /></td>
-        <td>${lastProduct.description}</td>
-        <td>${lastProduct.stock}</td>
+        <td>{lastProduct.description}</td>
+        <td>{lastProduct.stock}</td>
     </div>
     </tr>
     </tbody>

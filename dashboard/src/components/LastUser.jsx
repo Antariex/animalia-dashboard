@@ -28,6 +28,7 @@ function LastUser() {
         <tr>
           <th>ID</th>
           <th>Nombre</th>
+          <th>Permiso</th>
           <th>Usuario</th>
           <th>Email</th>
           <th>Dirección</th>
@@ -36,6 +37,7 @@ function LastUser() {
       </thead>
         <td>{lastUser.id}</td>
         <td>{lastUser.name}</td>
+        <td>{lastUser.permission_id}</td>
         <td>{lastUser.user}</td>
         <td>{lastUser.email}</td>
         <td>{lastUser.address}</td>

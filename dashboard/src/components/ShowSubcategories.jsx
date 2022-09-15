@@ -21,13 +21,14 @@ function TotalSubcategories() {
     return (
       <div className="products-box">
       <div className="products-top">
-        <p className="products-title">Total de subcategorías</p>
+        <p className="products-title">Todas las subcategorías de nuestros productos:</p>
       </div>
       <Table className="table">
       <thead>
         <tr>
           <th>ID</th>
           <th>subcategoría</th>
+          <th>cantidad (productos)</th>
         </tr>
       </thead>
 
@@ -39,6 +40,7 @@ function TotalSubcategories() {
 
          <td>{subcategory.id}</td>
          <td>{subcategory.subcategory}</td>
+         <td>{subcategory.id}</td>
 
         </tr>
         </tbody>

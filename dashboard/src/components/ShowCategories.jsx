@@ -23,13 +23,14 @@ function TotalCategories() {
 
       <div className="products-box">
       <div className="products-top">
-        <p className="products-title">Total de categorías</p>
+        <p className="products-title">Todas las categorías de nuestros productos:</p>
       </div>
       <Table className="table">
       <thead>
         <tr>
           <th>ID</th>
           <th>categoría</th>
+          <th>cantidad (productos)</th>
         </tr>
       </thead>
 
@@ -41,6 +42,7 @@ function TotalCategories() {
 
          <td>{category.id}</td>
          <td>{category.category}</td>
+         <td>{category.id}</td>
 
         </tr>
         </tbody>

@@ -20,7 +20,7 @@ function Users() {
   return (
     <div className="lastUser-box">
       <div className="lastUser-top">
-        <p className="lastUser-title">Todos nuestros usuarios</p>
+        <p className="lastUser-title">Todos nuestros usuarios registrados:</p>
       </div>
 
       <thead>
