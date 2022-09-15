@@ -21,7 +21,7 @@ function TotalSubcategories() {
     return (
       <div className="products-box">
       <div className="products-top">
-        <p className="products-title">Total de subcategorías</p>
+        <p className="products-title">Todas las subcategorías de nuestros productos:</p>
       </div>
       <Table className="table">
       <thead>

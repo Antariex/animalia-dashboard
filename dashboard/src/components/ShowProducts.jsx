@@ -22,7 +22,7 @@ function TotalProducts() {
 
       <div className="products-box">
       <div className="products-top">
-        <p className="products-title">Total de productos</p>
+        <p className="products-title">Todos nuestros productos:</p>
       </div>
       <Table className="table">
       <thead>
