@@ -18,15 +18,14 @@ export default function CountBySubcategory() {
                 <div className="card bg-transparent pt-3">
                     <div className="card-body text-light">
             <ul>
-                        <h4 className="card-title">Productos por subcategoría</h4>
-                    
            
                     <>
-                        <li>Alimentos: {subcategories.alimentos}</li>
-                        <li>Farmacia: {subcategories.farmacia}</li>
-                        <li>cuidados y Belleza: {subcategories.cuidadosYBelleza}</li>
-                        <li>Juguetes: {subcategories.juguetes}</li>
-                        <li>Otros Articulos: {subcategories.otrosArticulos}</li>
+                        
+                        <p>Alimentos: {subcategories.alimentos}</p>
+                        <p>Farmacia: {subcategories.farmacia}</p>
+                        <p>Cuidados y Belleza: {subcategories.cuidadosYBelleza}</p>
+                        <p>Juguetes: {subcategories.juguetes}</p>
+                        <p>Otros Articulos: {subcategories.otrosArticulos}</p>
 
                  
                     </>

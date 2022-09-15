@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table'
-//import ShowProductsByCategory from './components/ShowProductsByCategory'
-//<ShowProductsByCategory />
+import ShowProductsByCategory from "./ShowProductsByCategory";
+
 
 
 function TotalCategories() {
@@ -35,7 +35,6 @@ function TotalCategories() {
         <tr>
           <th>ID</th>
           <th>categoría</th>
-          <th>cantidad (productos)</th>
         </tr>
       </thead>
       {TotalCategories.map (category  => {
@@ -46,7 +45,6 @@ function TotalCategories() {
 
          <td>{category.id}</td>
          <td>{category.category}</td>
-         <td>{category.id}</td>
         </tr>
         </tbody>
         )
@@ -58,4 +56,3 @@ function TotalCategories() {
   );
 }
 export default TotalCategories;
-
