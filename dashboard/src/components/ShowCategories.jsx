@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table'
+import ShowProductsByCategory from "./ShowProductsByCategory";
+
+
 
 function TotalCategories() {
 
     const [TotalCategories, setTotalCategories] = useState([]);
     useEffect(() => {
       fetch("/api/categories")
-        .then((result) => result.json())
+      .then((result) => result.json())
         .then((data) => {
           setTotalCategories(data.data);
 
+      
+    
         });
     }, []);
 
@@ -20,7 +25,7 @@ function TotalCategories() {
     });
 
     return (
-
+      
       <div className="products-box">
       <div className="products-top">
         <p className="products-title">Todas las categorías de nuestros productos:</p>
@@ -30,10 +35,8 @@ function TotalCategories() {
         <tr>
           <th>ID</th>
           <th>categoría</th>
-          <th>cantidad (productos)</th>
         </tr>
       </thead>
-
       {TotalCategories.map (category  => {
 
         return(
@@ -42,8 +45,6 @@ function TotalCategories() {
 
          <td>{category.id}</td>
          <td>{category.category}</td>
-         <td>{category.id}</td>
-
         </tr>
         </tbody>
         )

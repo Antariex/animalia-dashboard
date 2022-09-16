@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function LastUser() {
   const [lastUser, setLastUser] = useState([]);
   useEffect(() => {
-    console.log("%cse monto el componente", "color: green");
+    console.log();
     fetch("/api/users")
       .then((result) => result.json())
       .then((data) => {
@@ -13,16 +13,16 @@ function LastUser() {
   }, []);
 
   useEffect(() => {
-    console.log("%cse actualizo el componente", "color: blue");
+    console.log();
   }, [lastUser]);
 
   useEffect(() => {
-    return () => console.log("%cse desmonto el componente", "color: red");
+    return () => console.log();
   });
 
   return (
     <tbody>
-      <tr>    
+      <tr>
     <div className="lastUser-box">
         <div className="lastUser-top"></div>
         <thead>

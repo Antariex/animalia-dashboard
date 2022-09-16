@@ -60,7 +60,7 @@ function TotalProducts() {
                 style={{
                 width: 50
                 }}
-                alt={products.name}
+                alt={products.thumbnail}
             />
         </td>
          <td> <Link
