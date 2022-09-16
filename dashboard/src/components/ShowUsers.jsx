@@ -31,7 +31,6 @@ function Users() {
           <th>Usuario</th>
           <th>Email</th>
           <th>Dirección</th>
-          <th>Password</th>
           <th>Avatar</th>
         </tr>
       </thead>
@@ -48,7 +47,6 @@ function Users() {
          <td>{users.user}</td>
          <td>{users.email}</td>
          <td>{users.address}</td>
-         <td>{users.password}</td>
          <td>
             <img
                 src={`${users.imagen}`}
